@@ -12,107 +12,175 @@
     <collation id="5" parent="1" name="RTRIM"/>
     <table id="6" parent="2" name="book"/>
     <table id="7" parent="2" name="coffee_sales"/>
-    <table id="8" parent="2" name="sales_day_1"/>
-    <table id="9" parent="2" name="sqlite_master">
+    <table id="8" parent="2" name="ordering"/>
+    <table id="9" parent="2" name="sales_day_1"/>
+    <table id="10" parent="2" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="10" parent="2" name="sqlite_sequence">
+    <table id="11" parent="2" name="sqlite_sequence">
       <System>1</System>
     </table>
-    <column id="11" parent="6" name="book_id">
+    <table id="12" parent="2" name="supply"/>
+    <table id="13" parent="2" name="trip"/>
+    <column id="14" parent="6" name="book_id">
       <Position>1</Position>
       <DataType>INTEGER|0s</DataType>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="12" parent="6" name="title">
+    <column id="15" parent="6" name="title">
       <Position>2</Position>
       <DataType>VARCHAR(50)|0s</DataType>
     </column>
-    <column id="13" parent="6" name="author">
+    <column id="16" parent="6" name="author">
       <Position>3</Position>
       <DataType>VARCHAR(30)|0s</DataType>
     </column>
-    <column id="14" parent="6" name="price">
+    <column id="17" parent="6" name="price">
       <Position>4</Position>
       <DataType>DECIMAL(8,2 digit)|0s</DataType>
     </column>
-    <column id="15" parent="6" name="amount">
+    <column id="18" parent="6" name="amount">
       <Position>5</Position>
       <DataType>INT|0s</DataType>
     </column>
-    <key id="16" parent="6">
+    <key id="19" parent="6">
       <ColNames>book_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="17" parent="7" name="sale_dttm">
+    <column id="20" parent="7" name="sale_dttm">
       <Position>1</Position>
       <DataType>TIMESTAMP|0s</DataType>
     </column>
-    <column id="18" parent="7" name="card_number">
+    <column id="21" parent="7" name="card_number">
       <Position>2</Position>
       <DataType>REAL|0s</DataType>
     </column>
-    <column id="19" parent="7" name="coffee_type">
+    <column id="22" parent="7" name="coffee_type">
       <Position>3</Position>
       <DataType>TEXT|0s</DataType>
     </column>
-    <column id="20" parent="7" name="coffee_price">
+    <column id="23" parent="7" name="coffee_price">
       <Position>4</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="21" parent="7" name="discount">
+    <column id="24" parent="7" name="discount">
       <Position>5</Position>
       <DataType>REAL|0s</DataType>
     </column>
-    <column id="22" parent="7" name="grocery_flg">
+    <column id="25" parent="7" name="grocery_flg">
       <Position>6</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="23" parent="7" name="price">
+    <column id="26" parent="7" name="price">
       <Position>7</Position>
       <DataType>REAL|0s</DataType>
     </column>
-    <column id="24" parent="8" name="dt">
+    <column id="27" parent="8" name="author">
+      <Position>1</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="28" parent="8" name="title">
+      <Position>2</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="29" parent="8" name="amount">
+      <Position>3</Position>
+    </column>
+    <column id="30" parent="9" name="dt">
       <Position>1</Position>
     </column>
-    <column id="25" parent="8" name="card_number">
+    <column id="31" parent="9" name="card_number">
       <Position>2</Position>
       <DataType>REAL|0s</DataType>
     </column>
-    <column id="26" parent="8" name="asgrocery_flg">
+    <column id="32" parent="9" name="asgrocery_flg">
       <Position>3</Position>
     </column>
-    <column id="27" parent="8" name="num_purchases">
+    <column id="33" parent="9" name="num_purchases">
       <Position>4</Position>
     </column>
-    <column id="28" parent="8" name="discount">
+    <column id="34" parent="9" name="discount">
       <Position>5</Position>
     </column>
-    <column id="29" parent="9" name="type">
+    <column id="35" parent="10" name="type">
       <Position>1</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="30" parent="9" name="name">
+    <column id="36" parent="10" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="31" parent="9" name="tbl_name">
+    <column id="37" parent="10" name="tbl_name">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="32" parent="9" name="rootpage">
+    <column id="38" parent="10" name="rootpage">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="33" parent="9" name="sql">
+    <column id="39" parent="10" name="sql">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="34" parent="10" name="name">
+    <column id="40" parent="11" name="name">
       <Position>1</Position>
     </column>
-    <column id="35" parent="10" name="seq">
+    <column id="41" parent="11" name="seq">
       <Position>2</Position>
     </column>
+    <column id="42" parent="12" name="supply_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="43" parent="12" name="title">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+    </column>
+    <column id="44" parent="12" name="author">
+      <Position>3</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <column id="45" parent="12" name="price">
+      <Position>4</Position>
+      <DataType>decimal(8,2 digit)|0s</DataType>
+    </column>
+    <column id="46" parent="12" name="amount">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <key id="47" parent="12">
+      <ColNames>supply_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="48" parent="13" name="trip_id">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="49" parent="13" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(30)|0s</DataType>
+    </column>
+    <column id="50" parent="13" name="city">
+      <Position>3</Position>
+      <DataType>VARCHAR(25)|0s</DataType>
+    </column>
+    <column id="51" parent="13" name="per_diem">
+      <Position>4</Position>
+      <DataType>DECIMAL(8,2 digit)|0s</DataType>
+    </column>
+    <column id="52" parent="13" name="date_first">
+      <Position>5</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="53" parent="13" name="date_last">
+      <Position>6</Position>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <key id="54" parent="13">
+      <ColNames>trip_id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>
